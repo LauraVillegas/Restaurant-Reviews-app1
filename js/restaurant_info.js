@@ -35,7 +35,7 @@ initMap = () => {
   });
 }  
  
- window.initMap = () => {
+ /*window.initMap = () => {
   fetchRestaurantFromURL((error, restaurant) => {
     if (error) { // Got an error!
       console.error(error);
@@ -50,7 +50,7 @@ initMap = () => {
     }
   });
 } 
-
+*/
 /**
  * Get current restaurant from page URL.
  */
@@ -128,6 +128,7 @@ fillReviewsHTML = (reviews = self.restaurant.reviews) => {
   const container = document.getElementById('reviews-container');
   const title = document.createElement('h2');
   title.innerHTML = 'Reviews';
+  title.tabIndex = '3';
   container.appendChild(title);
 
   if (!reviews) {
@@ -162,6 +163,7 @@ createReviewHTML = (review) => {
 
   const comments = document.createElement('p');
   comments.innerHTML = review.comments;
+  li.tabIndex = '3';
   li.appendChild(comments);
 
   return li;
