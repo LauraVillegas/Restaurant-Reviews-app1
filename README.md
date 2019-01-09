@@ -1,6 +1,6 @@
 # Mobile Web Specialist Certification Course
 ---
-#### _Three Stage Course Material Project - Restaurant Reviews_
+#### _Three Stage Course Material Project - Restaurant Reviews by Udacity_
 
 ## Project Overview: Stage 1
 
@@ -27,6 +27,10 @@ This repository uses [leafletjs](https://leafletjs.com/) with [Mapbox](https://w
 ### Note about ES6
 
 Most of the code in this project has been written to the ES6 JavaScript specification for compatibility with modern web browsers and future proofing JavaScript code. As much as possible, try to maintain use of ES6 in any additional JavaScript you write. 
+
+### Contributions
+
+This project has been provided by Udacity's Front End developer nanodegree. I have adapted it's code to meet the expectations for this module. I do not own the original code. 
 
 
 
