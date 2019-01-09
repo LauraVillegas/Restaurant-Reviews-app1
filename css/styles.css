@@ -148,7 +148,7 @@ nav h1 a {
   font-family: Arial,sans-serif;
   margin: 15px;
   min-height: 380px;
-  padding: 0 30px 25px;
+  padding: 25px 30px 25px;
   text-align: left;
   max-width: 470px;
   width: 80%;
@@ -224,7 +224,8 @@ nav h1 a {
   line-height: 1.1;
 }
 #restaurant-img {
-	max-width: 80%;
+  max-width: 80%;
+  padding: 25px;
 }
 #restaurant-address {
   font-size: 12pt;
@@ -449,7 +450,16 @@ body{
 } 
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {} 
+@media only screen and (min-width: 768px) {
+  #restaurants-list {
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  #restaurants-list li {
+    max-width: 40%;
+  }
+} 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {} 
