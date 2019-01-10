@@ -68,12 +68,10 @@ nav h1 a {
   text-transform: uppercase;
 }
 #breadcrumb {
-    padding: 10px 40px 16px;
     list-style: none;
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: calc(50% - 80px);
 }
 
 /* Display list items side by side */
@@ -284,7 +282,17 @@ nav h1 a {
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px){
+
+  #map > div.leaflet-control-container > div.leaflet-bottom.leaflet-right{
+    z-index: 998;
+  }
+  
+  div.leaflet-top.leaflet-left {
+    top: 60%;
+    z-index: 999;
+}
+
   nav h1 a {
     font-size: 10pt;
     font-weight: 100;
@@ -327,7 +335,7 @@ nav h1 a {
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
-  height: 50vh;
+  height: 45vh;
   position: absolute;
   right: 0;
   top: 10vh;
@@ -336,7 +344,7 @@ nav h1 a {
 
 .inside #map {
   background-color: #ccc;
-  height: 50vh;
+  height: 45vh;
   width: 100vw;
 }
 .inside #footer {
@@ -356,7 +364,8 @@ nav h1 a {
   line-height: 1.1;
 }
 #restaurant-img {
-	max-width: 80%;
+  max-width: 100%;
+  padding: 0px;
 }
 #restaurant-address {
   font-size: 12pt;
@@ -372,7 +381,7 @@ nav h1 a {
   padding: 2px 0;
   text-align: center;
   text-transform: uppercase;
-	max-width: 80%;
+	max-width: 100%;
 }
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
@@ -442,7 +451,8 @@ body{
   .filter-options h2 {
     font-size: 1.5em;
   }
-  .filter-options{
+
+  .filter-options {
     padding-left: 5vw;
     padding-right: 5vw;
     padding-top: 1vh;
@@ -459,6 +469,14 @@ body{
   #restaurants-list li {
     max-width: 40%;
   }
+
+  #restaurant-img {
+    padding:0px;
+  }
+
+  div.leaflet-top.leaflet-left {
+    top: 10px;
+}
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */

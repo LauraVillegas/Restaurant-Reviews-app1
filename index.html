@@ -22,12 +22,12 @@
       <div id="map" tabindex="-1"></div>
     </section>
     
-      <div class="filter-options">
+      <div class="filter-options" role="tablist">
         <h2>Filter Results</h2>
-        <select role="tablist" tabindex="2" id="neighborhoods-select" aria-label="filter by neighborhood name" name="neighborhoods" onchange="updateRestaurants()">
+        <select role="tab" tabindex="2" id="neighborhoods-select" aria-label="filter by neighborhood name" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
-        <select  role="tablist"  tabindex="2" id="cuisines-select" aria-label="filter by cuisine type" name="cuisines" onchange="updateRestaurants()">
+        <select  role="tab"  tabindex="2" id="cuisines-select" aria-label="filter by cuisine type" name="cuisines" onchange="updateRestaurants()">
           <option value="all">All Cuisines</option>
         </select>
       </div>
